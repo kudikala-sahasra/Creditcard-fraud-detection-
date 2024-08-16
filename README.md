@@ -57,5 +57,32 @@ Ensemble Prediction: Weighted predictions are summed and converted to binary for
 Evaluation:
 Evaluation metrics include accuracy, ROC AUC, confusion matrix, and classification report for the ensemble model.
 
+Dataset Overview
+Original class distribution:
+Class
+0 0.998273
+1 0.001727
+Balanced class distribution:
+Class
+0 0.5
+1 0.5
+Original dataset shape: (284807, 31)
+Balanced dataset shape: (568630, 31)
+Model Evaluation
+Confusion Matrix:
+ [[91724 2450]
+ [ 7302 86172]
+Ensemble Accuracy: 0.9607
+ROC AUC Score: 0.9986
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.93      1.00      0.96     94174
+           1       1.00      0.92      0.96     93474
+
+    accuracy                           0.96    187648
+   macro avg       0.96      0.96      0.96    187648
+weighted avg       0.96      0.96      0.96    187648
+
 
 
